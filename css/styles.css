@@ -63,7 +63,6 @@ input::placeholder {
   font-size: 0.75rem;
 }
 .term-spec {
-  /* font-size: 0.7rem; */
   font-weight: 700;
   opacity: 0.8;
   color: var(--cl-red);
@@ -77,6 +76,25 @@ input::placeholder {
   color: hsl(228, 45%, 44%);
 }
 
+/* active input */
+.active-input {
+  border-color: red;
+  color: red;
+}
+.invalid {
+  margin-top: 0.5rem;
+  margin-bottom: -0.2rem;
+  text-align: right;
+  font-size: 0.7rem;
+  font-weight: 500;
+}
+.error-img {
+  position: absolute;
+  top: 0;
+  right: 0;
+  transform: translate(-75%, 75%);
+}
+/* media queries */
 @media (min-width: 976px) {
   body {
     background: url(../images/bg-intro-desktop.png) center/cover;
