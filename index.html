@@ -21,12 +21,14 @@
     <title>Frontend Mentor | Intro component with sign up form</title>
   </head>
   <body>
-    <main>
+    <main class="min-vh-100 d-grid align-items-center">
       <div
-        class="container py-5 px-4 d-flex flex-column flex-md-row align-items-center"
+        class="container px-4 d-flex flex-column flex-md-row align-items-center"
       >
-        <div class="text-center text-white col">
-          <h1 class="header px-4 mb-4">Learn to code by watching others</h1>
+        <div class="text-center text-white col text-md-start">
+          <h1 class="header px-4 mb-4 px-md-0">
+            Learn to code by watching others
+          </h1>
           <p class="text px-1 mb-5">
             See how experienced developers solve problems in real-time. Watching
             scripted tutorials is great, but understanding how developers think
@@ -42,7 +44,7 @@
               thereafter
             </p>
           </div>
-          <div class="form-card card rounded-4">
+          <div class="form-card card rounded-4 p-lg-4 pb-lg-3">
             <form class="card-body d-grid gap-3" action="" method="get">
               <input
                 class="form-control py-3"
@@ -73,13 +75,13 @@
                 placeholder=" Password"
               />
               <button
-                class="submit-btn btn text-white py-3 text-uppercase"
+                class="submit-btn btn btn-success text-white py-3 text-uppercase"
                 type="submit"
               >
                 Claim your free trial
               </button>
             </form>
-            <p class="term-text text-center px-5 pb-2">
+            <p class="term-text text-center px-5 pb-2 pb-md-0 lh-lg">
               By clicking the button, you are agreeing to our
               <span class="term-spec">Terms and Services</span>
             </p>

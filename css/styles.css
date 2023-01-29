@@ -11,18 +11,15 @@
   --cl-DarkBlue: hsl(249, 10%, 26%);
   --cl-GrayishBlue: hsl(246, 25%, 77%);
 }
-*,
-::before,
-::after {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
 body {
   font-size: 16px;
   font-family: "Poppins", sans-serif;
   background: url(../images/bg-intro-mobile.png);
   background-color: var(--cl-red);
+}
+button,
+a {
+  cursor: pointer;
 }
 .header {
   font-size: 1.7rem;
@@ -32,11 +29,12 @@ body {
   opacity: 0.9;
 }
 .form-card {
-  box-shadow: 0px 8px 0px hsla(0, 0%, 0%, 0.237);
+  box-shadow: 0px 8px 0px hsla(0, 0%, 0%, 0.157);
 }
 input::placeholder {
   font-weight: 700;
   color: var(--cl-DarkBlue);
+  padding-left: 1rem;
 }
 .card-info {
   background: var(--cl-Blue);
@@ -55,6 +53,7 @@ input::placeholder {
 }
 .submit-btn {
   background-color: var(--cl-Green);
+  border: none;
   border-bottom: 5px solid hsla(154, 59%, 43%, 0.801);
   letter-spacing: 2px;
   font-weight: 500;
@@ -62,7 +61,6 @@ input::placeholder {
 .term-text {
   color: var(--cl-GrayishBlue);
   font-size: 0.75rem;
-  line-height: 2;
 }
 .term-spec {
   /* font-size: 0.7rem; */
@@ -77,4 +75,15 @@ input::placeholder {
 }
 .attribution a {
   color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 976px) {
+  body {
+    background: url(../images/bg-intro-desktop.png) center/cover;
+    background-color: var(--cl-red);
+  }
+  .header {
+    font-size: 3rem;
+    line-height: 1;
+  }
 }
