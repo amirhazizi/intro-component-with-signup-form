@@ -11,11 +11,66 @@
   --cl-DarkBlue: hsl(249, 10%, 26%);
   --cl-GrayishBlue: hsl(246, 25%, 77%);
 }
-
+*,
+::before,
+::after {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
 body {
   font-size: 16px;
   font-family: "Poppins", sans-serif;
+  background: url(../images/bg-intro-mobile.png);
+  background-color: var(--cl-red);
 }
+.header {
+  font-size: 1.7rem;
+  font-weight: 600;
+}
+.text {
+  opacity: 0.9;
+}
+.form-card {
+  box-shadow: 0px 8px 0px hsla(0, 0%, 0%, 0.237);
+}
+input::placeholder {
+  font-weight: 700;
+  color: var(--cl-DarkBlue);
+}
+.card-info {
+  background: var(--cl-Blue);
+  padding: 1.2rem 5rem;
+  margin-bottom: 1.5rem;
+  box-shadow: 0px 8px 0px hsla(0, 0%, 0%, 0.237);
+}
+.card-text {
+  font-weight: 300;
+  letter-spacing: 0.03rem;
+  font-size: 0.9rem;
+  line-height: 1.8;
+}
+.card-spec {
+  font-weight: 600;
+}
+.submit-btn {
+  background-color: var(--cl-Green);
+  border-bottom: 5px solid hsla(154, 59%, 43%, 0.801);
+  letter-spacing: 2px;
+  font-weight: 500;
+}
+.term-text {
+  color: var(--cl-GrayishBlue);
+  font-size: 0.75rem;
+  line-height: 2;
+}
+.term-spec {
+  /* font-size: 0.7rem; */
+  font-weight: 700;
+  opacity: 0.8;
+  color: var(--cl-red);
+}
+/* footer */
 .attribution {
   font-size: 11px;
   text-align: center;
