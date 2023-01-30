@@ -9,8 +9,6 @@ form.addEventListener("submit", function (e) {
     input.addEventListener("mouseleave", function (e) {
       if (e.currentTarget.value) {
         e.currentTarget.classList.remove("invalid-input")
-      } else {
-        e.currentTarget.classList.add("invalid-input")
       }
     })
     if (!input.value && input.dataset.id !== "email") {
